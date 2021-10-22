@@ -33,5 +33,5 @@ $sonDistintos = $numero != $otroNumero;
 var_dump($sonIguales);
 var_dump($sonDistintos);
 
-
+//cometario de prueba
 ?>
