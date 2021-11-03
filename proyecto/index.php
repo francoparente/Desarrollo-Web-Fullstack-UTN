@@ -1,5 +1,7 @@
 <?php
 
+require "humans.php";
+
 //acá creo una variable donde voy a guardar la conexión con la que voy a trabajar
 $mysqli = mysqli_connect(
     "127.0.0.1:3306",
@@ -9,7 +11,7 @@ $mysqli = mysqli_connect(
 );
 
 //hago una query que apunta a la conexión que guardé en la variable anterior
-$resultado = mysqli_query($mysqli, "SELECT name FROM human");
+$resultado = humans($mysqli);
 
 //con el while, printeo una por una cada fila del select que guardé en la variable $resultado
 while($unaFila = mysqli_fetch_assoc($resultado)) {
@@ -18,7 +20,8 @@ while($unaFila = mysqli_fetch_assoc($resultado)) {
 };
 
 //Acá inserto un registro a la tabla. Cada vez que le doy F5 en el navegador, se inserta uno nuevo.
-$pudoInsertar = mysqli_query($mysqli, "INSERT INTO human (name) VALUES ('Isildur')");
+$pudoInsertar = insertHuman($mysqli);
+
 if($pudoInsertar){
     echo "Se insertó un registro.";
     echo "<br>";
