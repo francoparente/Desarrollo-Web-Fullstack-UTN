@@ -2,7 +2,7 @@ USE tolkien;
 
 SELECT * FROM tolkien.human;
 
-DELETE FROM human WHERE id >4;
+DELETE FROM human WHERE id_human >4;
 
 SELECT name FROM tolkien.human;
 

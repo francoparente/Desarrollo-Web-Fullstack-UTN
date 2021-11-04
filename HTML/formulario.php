@@ -8,11 +8,14 @@
 </head>
 <body>
     
-<form action="welcome.php" method="post">
+<form action="formulario.php" method="get">
     Name: <input type="text" name="name" placeholder="ej. Pepito Grillo"><br>
     E-mail: <input type="email" name="email" placeholder="ej. pepito_grillo@mail.com"><br>
     <input type="submit">
 </form>
+
+Hola <?php isset($_GET["name"])? print_r($_GET['name']) : '' ?> ! <br>
+Tu email es: <?php isset($_GET["email"])? print_r($_GET['email']) : '' ?> <br>
 
 </body>
 </html>
