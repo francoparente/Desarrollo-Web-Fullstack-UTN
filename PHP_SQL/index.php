@@ -1,6 +1,6 @@
 <?php
 
-require "humans.php";
+require "abm/humans.php";
 
 //acá creo una variable donde voy a guardar la conexión con la que voy a trabajar
 $mysqli = mysqli_connect(
@@ -62,7 +62,7 @@ array_push($races, "Hobbit");
 //Agrego una nueva clave con un nuevo valor a un array asociativo:
 $hobbit["Birth Year"] = "2968";
 
-//Imprimo cosas (mirar lo que devuelve en http://localhost/curso-neoris-utn/proyecto/):
+//Imprimo cosas (mirar lo que devuelve en http://localhost/curso-neoris-utn/PHP_SQL/):
 print_r ($races);
 echo "<br>";
 print_r ($hobbit);
