@@ -1,0 +1,27 @@
+body{
+    background-color:azure;
+}
+.article {
+    border-color: gold;
+    border-style: solid;
+}
+.title {
+    font-size: 50px;
+    color: darkred;
+    border-color: orange;
+    border-style: solid;
+    text-align: center;
+    text-decoration: underline;
+}
+.intro {
+    color: white;
+    background-color: darkblue;
+    text-align: center;
+}
+.subtitle {
+    text-decoration: underline;
+}
+
+/* .Class   ->  .Selector{atributo: valor;} */
+/* #id   ->  #Selector{atributo: valor;} */
+/* tag   ->  Selector{atributo: valor;} */
