@@ -8,14 +8,12 @@
 </head>
 <body>
     
-<form action="procesar_datos.php" method="post">
-    Name: <input type="text" name="name" placeholder="ej. Pepito Grillo"><br>
-    E-mail: <input type="email" name="email" placeholder="ej. pepito_grillo@mail.com"><br>
-    <input type="submit">
-</form>
-
-<button type="submit">Enviar</button>
-
+    <form action="procesar_datos.php" method="post">
+        Name: <input type="text" name="name" placeholder="ej. Pepito Grillo"><br>
+        E-mail: <input type="email" name="email" placeholder="ej. pepito_grillo@mail.com"><br>
+        <input type="submit">
+        <button type="submit">Enviar</button>
+    </form>
 
 </body>
 </html>
