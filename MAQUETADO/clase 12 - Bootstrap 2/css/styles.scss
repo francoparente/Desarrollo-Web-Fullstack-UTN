@@ -1,0 +1,91 @@
+
+$color1: #7b7b7f; /*gris oscuro*/
+$color2: #c6c6c6; /*gris medio*/
+$color3: #dddddd; /*gris medio2*/
+$color4: #f0f0f0; /*gris claro*/
+$color5: #47ae73; /*verde*/
+
+html {
+  scroll-padding-top: 3.5rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  padding-top: 9.5rem;
+  padding-bottom: 6rem;
+
+}
+
+section {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+h1, h2 {
+  color: $color1;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $color5;
+  border-color: $color5;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover, &:focus {
+    color: #fff;
+    background-color: darken($color5, 10%);
+    border-color: darken($color5, 10%);
+    box-shadow: none !important;
+  }
+}
+
+.bg-color-1 {
+  background-color: $color1;
+}
+.bg-color-2 {
+  background-color: $color2;
+}
+.bg-color-3 {
+  background-color: $color3;
+}
+.bg-color-4 {
+  background-color: $color4;
+}
+.bg-color-5 {
+  background-color: $color5;
+}
+
+.color-1 {
+  color: $color1;
+}
+.color-2 {
+  color: $color2;
+}
+.color-3 {
+  color: $color3;
+}
+.color-4 {
+  color: $color4;
+}
+.color-5 {
+  color: $color5;
+}
+
+.box {
+  width: 100%;
+  min-height: 480px;
+  background-color: $color3; 
+}
